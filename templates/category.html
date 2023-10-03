@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}
+  Category
+{% endblock %}
+{% block link %}
+  <link rel="stylesheet" href="../static/CSS/category.css" />
+{% endblock %}
+
+
+{% block body %}
+  <div class="main">
+    <h1>Products</h1>
+    <ul class="cards">
+      {% for prod in product %}
+      <li class="cards_item">
+        <a class="botton" href="{% url "product-detail" prod.id %}">
+        <div class="card">
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+          <div class="card_image" ><img src="{{prod.product_image1.url}}" ></div>
+          <div class="card_content">
+            <h2>{{prod.title}}</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <h3>Rs.{{prod.selling_price}}</h3>
+            <div class="products_star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a class="btn" href="">Buy</a>
+          </div>
+        </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

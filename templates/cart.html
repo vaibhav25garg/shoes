@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}Cart{% endblock title %}
+{% block link %}
+    <link rel="stylesheet" href="../static/CSS/cart.css">
+{% endblock link %}
+
+{% block body %}
+   <!-- Cart -->
+
+<div class="cart">
+    <div class="shoping-cart">
+        <h1>Shopping Cart</h1>
+    </div>
+    <div class="cart-detail">
+        <div class="cart-left">
+            <div>
+                <h3>Cart</h3>
+                <div class="image-p">
+                    <img src="/static/image/shoes1.png" alt="">
+                </div>
+            </div>
+            <div class="about-cart">
+                <h5>HUSH PUPPIES BLACK SHOES FOR MEN</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, neque? 
+                    Voluptatum eveniet,facere, ipsum quisquam deserunt excepturi odio aperiam 
+                    quae ab molestiae esse magnam. Dicta blanditiis tempore modi quas dolorum.</p>
+                </p>
+                <div class="quantity">
+                    <i><h5>Quantity : </h5></i>
+                    <i><button id="add">+</button></i>
+                    <i><span id="num">1</span></i>
+                    <i><button id="sub">-</button></i>
+                </div>
+                <div class="pp1">
+                    <i><button>Remove Item</button></i>
+                    <i><span><h5>Rs. 6999</h5></span></i>
+                </div>
+            </div>
+        </div>
+        <div class="cart20">
+            <h1>The Total Amount Of </h1>
+            <div class="recipt">
+                <div class="recipt-box">
+                    <div>
+                        <i><label for="">Amount</label></i>
+                        <i><label for="">Shipping</label></i>
+                    </div>
+                    <div>
+                        <i>Rs.<span>6999.00</span></i>
+                        <i>Rs.<span>100.00</span></i>
+                    </div>
+                </div>
+                <div class="recipt-box2">
+                    <div>
+                        <i><b>Total</b> (including GST)</i>
+                        <i>Rs.<span>7099.00</span></i>
+                    </div>
+                    <div>
+                        <button>Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-right">
+            
+    </div>
+</div>
+
+{% endblock %}

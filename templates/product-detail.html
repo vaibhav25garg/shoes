@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}Product-Detail{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="../static/CSS/product-detail.css">
+{% endblock link %}
+
+
+{% block body %}
+   <!-- Product Details -->
+
+   <div class="about">
+        
+    <div class="about_main">
+        <div class="about_image">
+            <div class="about_small_image">
+                <img src="{{product.product_image1.url}}" onclick="functio(this)">
+                <img src="{{product.product_image2.url}}" onclick="functio(this)">
+                <img src="{{product.product_image3.url}}" onclick="functio(this)">
+                <img src="{{product.product_image4.url}}" onclick="functio(this)">
+            </div>
+
+            <div class="image_contaner">
+                <img src="{{product.product_image1.url}}" id="imagebox">
+            </div>
+
+        </div>
+
+        <div class="about_text">
+           <h1>{{product.title}}</h1>
+           <h3>MRP Rs {{product.selling_price}}</h3>
+           <h3>Select Size (Indian Size)</h3>
+           <ul>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+           </ul>
+           <div class="about_product">
+                <h3>About Product</h3>
+                <p><span>{{product.discription}}</span>
+                </p>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="add_to_cart"> + Add to Cart</button>
+                <button type="submit" class="Buy_now" >Buy Now</button>
+                <button type="submit" class="wishlist"><i class="fa-regular fa-heart"></i>  Wishlist</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function functio(small){
+            var full = document.getElementById("imagebox")
+            full.src = small.src;
+        }
+    </script>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Orders{% endblock %}
+{% block link %}
+<link rel="stylesheet" href="../static/CSS/orders.css">
+{% endblock %}
+
+
+
+{% block body %}
+  <!-- Orders -->
+
+  <div class="login_form">
+    <div class="left">
+      <h1>Your Orders</h1>
+      <div class="btn1">
+        <i><a href="">Profile</a></i>
+        <i><a href="">Address</a></i>
+        <i><a href="">Password</a></i>
+        <i><a href="">Orders</a></i>
+      </div>
+    </div>
+    <div class="right">
+      <div class="image">
+        <img src="/static/image/shoes2.png" alt="" />
+      </div>
+      <div class="track">
+        <div>
+          <h5>Product : <span>HUSH PUPPIES BLACK SHOES FOR MEN</span></h5>
+          <div class="quantity">
+            <i>Quantity :<span id="num">3</span></i>
+          </div>
+          <div class="pp1">
+            <i>Price <span>Rs. 6999.00</span></i>
+          </div>
+        </div>
+        <div class="trk">
+          <i>Order Status : <span>Pending</span></i>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

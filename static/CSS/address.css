@@ -1,0 +1,120 @@
+.main_profile{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  width: 25%;
+  margin: 90px 0 10px 0;
+  padding-top: 0;
+  border-right: solid rgb(184, 182, 182) ;
+}
+
+.right{
+  width: 75%;
+  padding: 50px;
+  position: relative;
+  top: 30px;
+}
+.left h1{
+  font-size: 30px;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #c72092,#6c14d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left .btn1{
+  text-decoration: none;
+  display:block;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.left .btn1 i a{
+  text-decoration: none;
+  display: block;
+  margin: 30px;
+  border-radius: 30px;
+  background: linear-gradient(to right,#c72092,#6c14d0);
+  color: white;
+  font-size: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  margin: 15px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn a{
+  width: 4.3rem;
+  height: 1.9rem;
+  padding: 6px;
+  text-decoration: none;
+  color: white;
+  display:block;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 7px;
+  background-color: rgb(127, 127, 170);
+}
+.card p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: left;
+  margin: 5px;
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

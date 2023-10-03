@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}CheckOut{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="../static/CSS/checkout.css">
+{% endblock link %}
+
+
+
+{% block body %}
+    <!-- CheckOut -->
+
+    <div class="cart">
+        <div class="shoping-cart">
+            <i><div><h3>Order Summary</h3></div></i>
+            <div><h3>Select Shipping Address</h3></div>
+        </div>
+        <div class="cart-detail">
+            <div class="cart-left">
+                <div>
+                    <h3>Cart</h3>
+                </div>
+                <div class="about-cart">
+                    <h5>HUSH PUPPIES BLACK SHOES FOR MEN</h5>
+                    <div class="quantity">
+                        <i>Quantity :<span id="num">3</span></i>
+                    </div>
+                    <div class="pp1">
+                        <i>Price <span>Rs. 6999.00</span></i>
+                    </div>
+                    <div class="check">
+                        <h4>Total Cost = Rs <span>6999.00</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maiores ad odio cum unde assumenda natus necessitatibus corporis,
+                        magni placeat atque alias obcaecatiearum minus eveniet 
+                        repudiandae ab deleniti voluptas id.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart20">
+                <h3>Suraj Bhalse</h3>
+                <div class="recipt-box">
+                    <div>
+                        <i><label for="">Mobile : </label></i>
+                        <i><label for="">Shipping : </label></i>
+                    </div>
+                    <div>
+                        <i><span>7485967412</span></i>
+                        <i><label for=""><span>Techno India NJR, Udaipur, Raj. 312021</span></label></i>
+                    </div>
+                </div> 
+                <i><input type="radio" name="" id=""></i><i> Address</i>
+                <div class="recipt-box2">
+                    <div>
+                        <label for=""><h4>Total Amount</h4></label>
+                        <div><span>6999.00</span></div>
+                    </div>
+                    <div>
+                        <button>Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-right">
+                
+        </div>
+    </div>
+{% endblock %}

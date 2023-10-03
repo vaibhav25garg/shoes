@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}
+Profile
+{% endblock %}
+{% block link %}
+<link rel="stylesheet" href="../static/CSS/address.css" />
+<link rel="stylesheet" href="../static/CSS/base.css" />
+
+{% endblock %}
+
+
+{% block body %}
+<!-- profile -->
+
+<div class="main_profile">
+  <div class="left">
+    <h1>Your Account</h1>
+    <div class="btn1">
+      <i><a href="{% url 'Profile' %}">Profile</a></i>
+      <i><a href="{% url 'Address' %}">Address</a></i>
+      <i><a href="">Password</a></i>
+      <i><a href="">Orders</a></i>
+    </div>
+  </div>
+  <div class="right">
+    <div class="row">
+      <div class="column">
+        {% for ad in add %}
+        <div class="card">
+          <h3>Address: {{forloop.counter}}</h3>
+          <p>Name: {{ad.name}}</p>
+          <p>Locality: {{ad.locality}}</p>
+          <p>Mobile: {{ad.mobile}}</p>
+          <p>City: {{ad.city}}</p>
+          <p>State: {{ad.state}}</p>
+          <p>Pincode: {{ad.zipcode}}</p>
+          <div class="btn">
+            <a href="{% url 'UpdateAddress' %}">update</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+{% endblock %}

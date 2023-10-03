@@ -1,0 +1,138 @@
+/* Product detail */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+}
+
+.about .about_main{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .about_main .about_image{
+    display: flex;
+    margin-top: 10px;
+}
+
+.about .about_main .about_image .about_small_image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+}
+
+.about .about_main .about_image .about_small_image img{
+    height: 92px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #6c14d0 , #c72092);
+    display: block;
+    border-radius: 6px;
+    padding: 5px px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.about .about_main .about_image .about_small_image img:hover{
+    opacity: 1;
+}
+
+.about .about_main .image_contaner{
+    padding: 10px;
+    display: flex;
+}
+
+.about .about_main .image_contaner img{
+    height: 430px;
+    padding: 30px;
+}
+
+.about .about_main .about_text{
+    margin-top: 80px;
+}
+.about .about_main .about_text h1{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0 20px 0;
+    color: black;
+}
+.about .about_main .about_text h3{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0 20px 0;
+    color: black;
+}
+.about .about_main .about_text ul li{
+    font-size: 20px;
+    padding: 20px;
+    border: solid rgb(156, 140, 172);
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 5px;
+}
+.about .about_main .about_text .about_product p label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+.about .about_main .about_text {
+    line-height: 26px;
+    width: 550px;
+    text-align: justify;
+    padding: 25px 30px;
+}
+
+.about .about_btn{
+    color: black;
+    background: none;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 10px 25px;
+    border: 2px solid #c72092;
+    text-decoration: none;
+    box-shadow: 0 0 8px #c72092;
+    transition: 0.5s;
+}
+
+.about .about_btn:hover{
+    border: 2px solid transparent;
+    background: #c72092;
+    color: white;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button button{
+    text-decoration: none;
+    width: 150px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+
+}
+
+.add_to_cart{
+    background: linear-gradient(to right, #6c14d0 , #c72092);
+}
+
+.Buy_now{
+    background: linear-gradient(to right, #6c14d0 , #c72092);
+    text-decoration: none;
+}
+
+.wishlist{
+    background: linear-gradient(to right, #6c14d0 , #c72092);
+    width: 30px;
+}

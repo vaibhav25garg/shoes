@@ -1,0 +1,131 @@
+/* Checkout */
+
+.cart{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+}
+
+.shoping-cart{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;  
+    font-size: 20px;
+    background: linear-gradient(to right, #c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shoping-cart div{
+    border-bottom: 2px solid gray;
+    width: 400px; 
+}
+
+.shoping-cart i div{
+    border-bottom: 2px solid gray;
+    width: 580px;
+    margin-left: -20px; 
+}
+
+.cart-detail{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-left{
+    width: 600px;
+    height: 150px;
+    border: 1px solid #7344a8;
+    border-radius: 10px;
+    margin: 20px 40px;
+    padding: 10px;
+    box-shadow: 0 0 8px black;
+}
+.cart-left h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-cart{
+    margin-top: 10px;
+}
+
+.about-cart h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quantity i{
+    width: 200px;
+    font-size: 20px;
+    color: rgb(61, 60, 60);
+}
+
+.pp1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.check{
+    margin-top: 30px;
+}
+
+
+.about-cart div h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cart20{
+    margin-top: 20px;
+    width: 500px;
+    height: 120px;
+    border: 1px solid #7344a8;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 6px black;
+}
+
+.recipt-box{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.recipt-box input{
+   display: inline;
+}
+
+.recipt-box div i{
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
+.recipt-box2 div{
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+    display: block;
+}
+
+.recipt-box2 div div{
+    border: 2px solid rgb(153, 152, 152);
+    border-radius: 4px;
+    width: 480px;
+    height: 30px;
+}
+
+.recipt-box2 div div span{
+    padding: 10px;
+}
+.recipt-box2 div button{
+    width: 40%;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    background: #7814d4;
+    font-size: 15px;
+    cursor: pointer;
+}
